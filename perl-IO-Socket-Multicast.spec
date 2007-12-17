@@ -12,7 +12,6 @@ Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/IO/%{module}-%{version}.tar.bz2
 BuildRequires:  perl-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 IO::Socket::Multicast is designed to take the effort out of managing
