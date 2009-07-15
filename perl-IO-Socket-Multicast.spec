@@ -1,7 +1,7 @@
 %define module  IO-Socket-Multicast
 %define name    perl-%{module}
-%define version 1.05
-%define release %mkrel 5
+%define version 1.07
+%define release %mkrel 1
 
 Name:           %{name}
 Version:        %{version}
