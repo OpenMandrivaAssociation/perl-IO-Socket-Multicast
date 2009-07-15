@@ -9,7 +9,7 @@ Summary:        Send and receive multicast messages
 License:        GPL+ or Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%{upstream_name}
-Source:         http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.gz
+Source:         http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:  perl(IO::Interface)
 BuildRoot:      %{_tmppath}/%{name}-%{version}
