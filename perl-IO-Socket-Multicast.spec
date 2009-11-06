@@ -1,5 +1,5 @@
 %define upstream_name    IO-Socket-Multicast
-%define upstream_version 1.07
+%define upstream_version 1.11
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:        Send and receive multicast messages
 License:        GPL+ or Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%{upstream_name}
-Source:         http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.bz2
+Source:         http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl-devel
 BuildRequires:  perl(IO::Interface)
