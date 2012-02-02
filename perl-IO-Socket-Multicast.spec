@@ -6,7 +6,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	3
 
 Summary:	Send and receive multicast messages
-License;	GPL+ or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/IO/%{module}-%{upstream_version}.tar.gz
