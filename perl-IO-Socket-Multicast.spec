@@ -1,43 +1,37 @@
-%define upstream_name    IO-Socket-Multicast
-%define upstream_version 1.12
+%define	module	IO-Socket-Multicast
+%define	upstream_version 1.12
 
-Name:           perl-%{upstream_name}
-Version:        %perl_convert_version %{upstream_version}
+Name:		perl-%{module}
+Version:	%perl_convert_version %{upstream_version}
 Release:	3
 
-Summary:        Send and receive multicast messages
-License:        GPL+ or Artistic
-Group:          Development/Perl
-Url:            http://search.cpan.org/dist/%{upstream_name}
-Source:         http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.gz
+Summary:	Send and receive multicast messages
+License;	GPL+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{module}
+Source0:	http://www.cpan.org/modules/by-module/IO/%{module}-%{upstream_version}.tar.gz
 
-BuildRequires:  perl-devel
-BuildRequires:  perl(IO::Interface)
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
+BuildRequires:	perl-devel
+BuildRequires:	perl(IO::Interface)
 
 %description
 IO::Socket::Multicast is designed to take the effort out of managing
 some multicast network.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{module}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
-%{__make} test
+make test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean 
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc Changes README 
 %{perl_vendorarch}/IO
 %{perl_vendorarch}/auto/IO
