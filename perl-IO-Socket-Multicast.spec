@@ -8,7 +8,7 @@ Release:	5
 Summary:	Send and receive multicast messages
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/IO/%{module}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
