@@ -1,15 +1,13 @@
 %define	module	IO-Socket-Multicast
-%define	upstream_version 1.12
-
 Name:		perl-%{module}
-Version:	%{upstream_version}
-Release:	6
+Version:	1.12
+Release:	7
 
 Summary:	Send and receive multicast messages
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/IO-Socket-Multicast
-Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRAMBLE/IO-Socket-Multicast-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRAMBLE/IO-Socket-Multicast-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -20,7 +18,7 @@ IO::Socket::Multicast is designed to take the effort out of managing
 some multicast network.
 
 %prep
-%setup -q -n %{module}-%{upstream_version}
+%setup -q -n %{module}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -62,9 +60,7 @@ make test
 - adding missing buildrequires:
 - wrongly changed extension
 - adding missing buildrequires:
-- using %%perl_convert_version
-
-  + Guillaume Rousse <guillomovitch@mandriva.org>
+- using %1.12 Guillaume Rousse <guillomovitch@mandriva.org>
     - update to new version 1.07
 
 * Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.05-5mdv2009.0
